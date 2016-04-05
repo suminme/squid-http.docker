@@ -12,7 +12,7 @@ RUN apt-get -y install squid
 ADD squid.conf /etc/squid3/squid.conf
 
 # execute.sh
-ADD execute.sh $ENV_PATH/bin/squid3.sh
+ADD execute.sh $ENV_PATH/bin/squid.sh
 RUN chmod 777 $ENV_PATH/bin/*.sh
 
 # Expose ports
