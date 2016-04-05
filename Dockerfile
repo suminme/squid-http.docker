@@ -14,6 +14,3 @@ RUN chmod 777 /opt/bin/*.sh
 
 # Expose ports
 EXPOSE 3128
-
-# ENTRYPOINT
-ENTRYPOINT /opt/bin/squid.sh
