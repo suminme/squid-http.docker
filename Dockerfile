@@ -17,3 +17,6 @@ RUN chmod 777 $ENV_PATH/bin/*.sh
 
 # Expose ports
 EXPOSE 8080
+
+# ENTRYPOINT
+ENTRYPOINT reload /usr/sbin/squid3
