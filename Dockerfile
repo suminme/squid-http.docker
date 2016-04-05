@@ -19,4 +19,4 @@ RUN chmod 777 $ENV_PATH/bin/*.sh
 EXPOSE 3128
 
 # ENTRYPOINT
-ENTRYPOINT reload /usr/sbin/squid3
+#ENTRYPOINT reload /usr/sbin/squid3
