@@ -16,7 +16,7 @@ ADD execute.sh $ENV_PATH/bin/execute.sh
 RUN chmod 777 $ENV_PATH/bin/*.sh
 
 # Expose ports
-EXPOSE 8080
+EXPOSE 3128
 
 # ENTRYPOINT
 ENTRYPOINT reload /usr/sbin/squid3
