@@ -12,8 +12,9 @@ RUN apt-get -y install squid
 ADD squid.conf /etc/squid3/squid.conf
 
 # execute.sh
-ADD execute.sh $ENV_PATH/bin/squid.sh
-RUN chmod 777 $ENV_PATH/bin/*.sh
+ADD squid.sh /opt/bin/squid.sh
+RUN chmod 777 /opt/bin/*.sh
+ENV PATH $PATH:/opt/bin/
 
 # Expose ports
 EXPOSE 3128
