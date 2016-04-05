@@ -1,3 +1,3 @@
 #!/bin/sh
 
-service squid3 restart
+cd /usr/sbin && reload squid3
